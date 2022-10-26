@@ -1,0 +1,30 @@
+/* .publicContact{
+    width: 100%;
+    height: auto;
+    min-height: 600px;
+    padding: 80px 16px 0 0;
+    background-color:rgb(235, 235, 235);
+    margin-left: -8px;
+    text-align: center;
+    color: black;
+    font-size: 25px;
+} */
+.publicInput{
+    height: 25px;
+    width: 250px;
+    margin-left: -200px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.publicMesssage{
+    height: 100px;
+    width: 450px;
+    
+}
+.publicH6{
+    text-align: left;
+    color:red;
+    font-size: 15px;
+    margin-left:400px;
+    margin-top:-50px;
+}

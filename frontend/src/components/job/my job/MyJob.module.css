@@ -1,0 +1,20 @@
+.myJob{
+    height: 540px;
+    width: 450px;
+    border:10px solid transparent;
+    border-radius: 50px;
+    margin-top: 25px;
+    margin-left: 30px;
+    background-color: rgba(0,0,0,0.5);
+}
+.myJobForm{
+    position: relative;
+    padding: 20px 50px;
+}
+.myJob input{
+    /* height: 25px; */
+}
+.myJobForm button{
+    margin-left: 5px;
+    margin-right: 5px;
+}

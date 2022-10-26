@@ -1,0 +1,12 @@
+.publicAboutspan{
+    color:rgba(255, 0, 0, .75)
+}
+.publicAboutH3{
+    text-align: left;
+    margin-left:50px;
+    margin-right: 10px;
+    font-family: "Trebuchet MS", Verdana, sans-serif;
+    line-height: 2.5;
+    letter-spacing: .5px;
+  word-spacing: 3px;
+}

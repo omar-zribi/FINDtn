@@ -1,0 +1,73 @@
+.publicHome{
+    height:630px;
+    user-select: none;
+    background-color:rgba(250, 250, 100,.5);
+    text-align: center;
+    margin-top: -50px;
+    padding-top:80px;
+    font-size: 30px;
+}
+.partie1{
+    display: flex;
+}
+.partie1Image{
+    height: 450px;
+    width: auto;
+    padding: 10px 0 ;
+    margin-right: 10%;
+    border-radius: 20%;
+}
+.text{
+    height: auto;
+    margin-left: 20%;
+}
+.textP{
+    text-align: left;
+}
+.textSpan{
+    color:red;
+    font-size: 30px;
+    font-weight: bold;
+}
+.textH4{
+    margin-top:-50px;
+    font-size: 75px;
+    text-align: left;
+    font-weight:bolder;
+    color: black;
+}
+.buttonPartie1{
+    position: absolute;
+    display: inline-block;
+    margin-left: -180px;
+    font-size: 25px;
+    font-weight: bold;
+    color: rgba(255, 0, 0,.5);
+    text-decoration: none;
+    border: 4px solid rgba(255, 0, 0,.5);
+    background-color:transparent;
+    border-radius: 100px ;
+}
+.buttonPartie1:hover{
+    color: rgba(0, 0, 0, 0.5);
+    border: 4px solid rgba(0, 0, 0, 0.5);
+    background-color: rgba(255, 0, 0, 0.5);
+}
+.btnSpanUser:after{
+    position: absolute;
+    border-radius: 25px ;
+    margin-left: -15px;
+    color:white;
+    background-color: rgba(255, 0, 0, 0.5);
+    width: 150px;
+    content:"sign-up";
+    animation: spin 3s  linear infinite;
+}
+@keyframes spin{
+    25%{content:"log-in";
+    border-radius: 25px ;
+    }
+    100%{content:"sign-up";
+    border-radius: 25px ;
+    }
+}
