@@ -1,4 +1,3 @@
-import { useSelector } from 'react-redux';
 import './App.css'
 import PublicApp from './components/public interface/PublicApp';
 import PrivateApp from './components/private interface/PrivateApp';
@@ -8,17 +7,18 @@ import PrivateApp from './components/private interface/PrivateApp';
 // import Loading from './components/loading/Loading';
 
 function App() {
-  const user= useSelector((state) => state.userReducer.user);
-  console.log(user)
+  const token= localStorage.getItem('token');
+  console.log(token)
   return (
     <div>
-      <PublicApp />
       {
-        // user===null?(<PublicApp />):(<PrivateApp />)
+        token===null
+        ?
+        (<PublicApp />)
+        :
+        (<PrivateApp />) 
       }
-     
-     
-     {/* <AdminApp /> */}
+      {/* (<AdminApp />) */}
       {/* <Error404/> */}
       {/* <Error403/> */}
       {/* <Loading/> */}
