@@ -11,7 +11,7 @@ const initUser = {
     user: null,
     error: null,
     loading: false,
-    token: localStorage.getItem("token"),
+    // token: localStorage.getItem("token"),
     isAuth: false
 };
 
@@ -51,7 +51,7 @@ const userReducer = (state = initUser, { type, payload }) => {
                 user: payload,
                 error: null,
                 loading: false,
-                token: localStorage.getItem("token"),
+                // token: localStorage.getItem("token"),
                 isAuth: true,
             }
         case LOGIN_USER_SUCCESS:
@@ -60,7 +60,7 @@ const userReducer = (state = initUser, { type, payload }) => {
                 user: payload,
                 error: null,
                 loading: false,
-                token: localStorage.getItem("token"),
+                // token: localStorage.getItem("token"),
                 isAuth: true,
             }
         case GET_PROFILE_USER_SUCCESS:
@@ -69,30 +69,35 @@ const userReducer = (state = initUser, { type, payload }) => {
                 user: payload,
                 error: null,
                 loading: false,
-                token: localStorage.getItem("token"),
+                // token: localStorage.getItem("token"),
                 isAuth: true,
             }
         case GET_all_PROFILE_USER_SUCCESS:
             return {
                 ...state,
-                loading: false,
-                isAuth: true,
-                error: null,
                 user: payload,
+                error: null,
+                loading: false,
+                // token: localStorage.getItem("token"),
+                isAuth: true,
             }
         case UPDATE_PROFILE_USER_SUCCESS:
             return {
-                ...state,
-                loading: false,
-                isAuth: true,
+                 ...state,
+                user: payload,
                 error: null,
+                loading: false,
+                // token: localStorage.getItem("token"),
+                isAuth: true,
             }
         case DELETE_PROFILE_USER_SUCCESS:
             return {
-                ...state,
-                loading: false,
-                isAuth: true,
+                 ...state,
+                user: payload,
                 error: null,
+                loading: false,
+                // token: localStorage.getItem("token"),
+                isAuth: true,
             }
         // case LOGOUT_USER:
         //     return {

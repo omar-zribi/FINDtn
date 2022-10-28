@@ -11,7 +11,7 @@ import axios from "axios";
 export const userSignUp = (newUser) => async (dispatch) => {
     dispatch({ type: SIGN_UP_USER });
     try {
-        const res = await axios.post("http://localhost:2010signup", newUser);
+        const res = await axios.post("http://localhost:2010/signup", newUser);
         localStorage.setItem("token", res.data.token);
         dispatch({ type: SIGN_UP_USER_SUCCESS, payload: res.data, });
     } catch (error) {
@@ -25,7 +25,7 @@ export const userSignUp = (newUser) => async (dispatch) => {
 export const logInUsers = (User) => async (dispatch) => {
     dispatch({ type: LOGIN_USER, });
     try {
-        const res = await axios.post("http://localhost:2010login", User);
+        const res = await axios.post("http://localhost:2010/login", User);
         localStorage.setItem("token", res.data.token);
         dispatch({
             type: LOGIN_USER_SUCCESS,

@@ -24,6 +24,11 @@ const PublicAbout = () => {
         service 100%{" "}
         <span className={PublicAboutCSS.publicAboutspan}>gratuit</span>.
       </h3>
+      <h3 className={PublicAboutCSS.publicAboutH3}>
+      Avez-vous un compte? <a href="/user">Connectez</a>-vous ici
+      <br />
+       
+       Vous n'avez pas encore de compte? <a href="/user">Créer</a> un compte maintenant</h3>
     </div>
   );
 };

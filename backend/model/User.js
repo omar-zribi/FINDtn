@@ -14,6 +14,11 @@ const userSchema = new Schema({
         type: String,
         required: true,
     },
+    isActive:{
+        type: Boolean,
+        default:false,
+    },
+    activationCode:{type:Number},
     etabOrigin: {
         type: String,
         required: true,

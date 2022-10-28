@@ -1,3 +1,12 @@
+.publicAbout{
+  height:680px;
+    user-select: none;
+    background-color:rgba(250, 250, 100,.5);
+    text-align: center;
+    margin-top: -50px;
+    padding-top:80px;
+    font-size: 30px;
+}
 .publicAboutspan{
     color:rgba(255, 0, 0, .75)
 }
@@ -9,4 +18,19 @@
     line-height: 2.5;
     letter-spacing: .5px;
   word-spacing: 3px;
+}
+.publicAboutH3 a {
+  animation: colortext 5s  linear infinite;
+}
+
+@keyframes colortext {
+  0% {
+    color:red;
+  } 
+  50% {
+    color:blue;
+  }
+  100% {
+    color:red;
+  }
 }

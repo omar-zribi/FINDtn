@@ -9,6 +9,15 @@
     color: black;
     font-size: 25px;
 } */
+.publicContact{
+    height:630px;
+      user-select: none;
+      background-color:rgba(250, 250, 100,.5);
+      text-align: center;
+      margin-top: -50px;
+      padding-top:80px;
+      /* font-size: 30px; */
+  }
 .publicInput{
     height: 25px;
     width: 250px;
@@ -21,10 +30,39 @@
     width: 450px;
     
 }
-.publicH6{
+.publicH6A{
     text-align: left;
     color:red;
     font-size: 15px;
-    margin-left:400px;
-    margin-top:-50px;
+    margin-left:450px;
+    margin-top:-20px;
+}
+.publicH6B{
+    text-align: left;
+    color:red;
+    font-size: 15px;
+    margin-left:450px;
+    margin-top:-30px;
+}
+.success{
+    font-size: 20px;
+    position: absolute;
+    top:80px;
+    left: 50%;
+    margin-left: -100px;
+    /* text-align: center; */
+    color: green;
+    animation: buttons .3s linear;
+    display: none;
+}
+@keyframes buttons{
+    0%{
+        transform: scale(0.1);
+    }
+    50%{
+        transform: scale(0.5);
+    }
+    100%{
+        transform: scale(1);
+    }
 }
