@@ -10,8 +10,6 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "bootstrap": "^5.2.2",
-    "concurrently": "^7.5.0",
-    "react-bootstrap": "^2.5.0"
+    "concurrently": "^7.5.0"
   }
 }
