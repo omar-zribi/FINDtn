@@ -3,7 +3,7 @@ const User = require('../model/User');
 const config = require("config");
 const secret = config.get("secret");
 
-exports.userSingUpAuth = async (req, res, next) => {
+exports.userAuth = async (req, res, next) => {
     const token = req.headers.authorization;
     try {
         const decoded = jwt.verify(token, secret);

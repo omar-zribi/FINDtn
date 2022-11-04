@@ -1,10 +1,13 @@
 import React from "react";
-import user from "../../../image/user.png";
+import imguser from "../../../image/user.png";
 import job from "../../../image/job.png";
 import message from "../../../image/message.png";
 import PrivateNavBarCSS from "./PrivateNavBar.module.css";
+import { useSelector } from "react-redux";
 
 const PrivateNavBar = () => {
+  const user = useSelector((state) => state.userReducer.user);
+
   return (
     <div className={PrivateNavBarCSS.navbarp}>
       <nav className={PrivateNavBarCSS.nav}>
@@ -17,8 +20,8 @@ const PrivateNavBar = () => {
           </li>
           <span className={PrivateNavBarCSS.span}>
             <li className={PrivateNavBarCSS.li}>
-              <a className={PrivateNavBarCSS.a} href="/profile">
-                <img src={user} alt="" className={PrivateNavBarCSS.imgUser} />
+              <a className={PrivateNavBarCSS.a} href={`/${user.userName}`}>
+                <img src={imguser} alt="" className={PrivateNavBarCSS.imgUser} />
               </a>
             </li>
             <li className={PrivateNavBarCSS.li}>

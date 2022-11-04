@@ -1,0 +1,68 @@
+body {
+  position: relative;
+  align-items: center;
+  justify-content: center;
+  margin-left: auto;
+  user-select: none;
+  margin-right: auto;
+}
+.SignUp {
+  background-color: rgba(250, 250, 100, 0.5);
+  width: auto;
+  height: auto;
+  padding-top: 0.5%;
+  padding-bottom: 0.5%;
+}
+.SignUpH1 {
+  color: rgb(0, 0, 0);
+  font-size: 50px;
+  font-weight: bold;
+  font-family: "Roboto", sans-serif;
+  text-align: center;
+}
+.SignUpForm {
+  justify-content: space-evenly;
+}
+.SignUpGrandSpan {
+  display: flex;
+  position: relative;
+  justify-content: center;
+}
+.SignUpSpanPartieB {
+  position: relative;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+.SignUpInput {
+  border: 2px solid black;
+  outline: none;
+  border-radius: 50px;
+  background-color: rgba(255, 255, 255, 0.5);
+  color: rgba(0, 0, 0, 0.5);
+  font-family: "Roboto", sans-serif;
+  width: 300px;
+  margin: 2px 10px;
+}
+.SignUpInput:focus {
+  border: 2px solid red;
+  border-radius: 50px;
+}
+.SignUpButton {
+  position: relative;
+  left: 45%;
+  right: 45%;
+  margin-top: 1%;
+  outline: none;
+  padding: 10px 25px;
+  border: 4px solid red;
+  border-radius: 50px;
+  font-size: 20px;
+  font-family: "Roboto", sans-serif;
+  font-weight: bold;
+}
+.SignUpButton:focus {
+  border: 4px solid rgb(0, 0, 0);
+}
+.SignUpButton:hover {
+  border: 4px solid green;
+}

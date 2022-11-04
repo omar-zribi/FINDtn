@@ -23,12 +23,14 @@
   font-weight: 700;
   margin-top: 5px;
 }
-.h6 {
+.h6, #logo .h6:hover{
   font-size: 15px;
   font-weight: 700;
   margin-top: 14px;
+  color: black;
 }
-.h1:hover,
+#logo:hover,
 .link:hover {
   color: coral;
 }
+

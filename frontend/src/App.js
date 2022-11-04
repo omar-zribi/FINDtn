@@ -1,28 +1,26 @@
-import './App.css'
-import PublicApp from './components/public interface/PublicApp';
-import PrivateApp from './components/private interface/PrivateApp';
-// import AdminApp from './components/admin interface/AdminApp';
-// import Error404 from './components/error/Error404';
-// import Error403 from './components/error/Error403';
-// import Loading from './components/loading/Loading';
+import React from 'react';
+// import './App.css'
+import { useSelector } from 'react-redux';
+
+import PublicNavBar from './components/public interface/public navbar/PublicNavBar';
+import PrivateNavBar from './components/private interface/private navbar/PrivateNavBar';
+import AdminNavBar from './components/admin interface/admin navbar/AdminNavBar';
+import FullApp from './components/FullApp';
+import Footer from './components/footer/Footer';
 
 function App() {
-  const token= localStorage.getItem('token');
-  console.log(token)
+  const user = useSelector((state) => state.userReducer.user);
+  const token = localStorage.getItem('token');
   return (
-    <div>
-      {
-        token===null
-        ?
-        (<PublicApp />)
-        :
-        (<PrivateApp />) 
-      }
-      {/* (<AdminApp />) */}
-      {/* <Error404/> */}
-      {/* <Error403/> */}
-      {/* <Loading/> */}
-    </div>
+    <>
+    {
+      ((user) && (token) && (user.role === 'user') && (user.isActive === true))?(<PrivateNavBar />):
+      ((user) && (token) && (user.role === 'admin') && (user.isActive === true))?(<AdminNavBar />):
+      (<PublicNavBar />)
+    }
+      <FullApp/>
+      <Footer />
+    </>
   );
 }
 

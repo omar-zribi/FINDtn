@@ -1,29 +1,21 @@
 const mongoose = require("mongoose");
 const Schema = mongoose.Schema;
-const userSchema = new Schema({
+const jobSchema = new Schema({
     userName: {
         type: String,
-        required: true,
+        require: true
     },
     fullUserName: {
         type: String,
-        required: true,
+        require: true
     },
     userSex: {
         type: String,
-        sex: ["male", "female"],
-        required: true,
+        require: true
     },
     email: {
         type: String,
-        required: true,
-    },
-    isActive: {
-        type: Boolean,
-        default: false,
-    },
-    activationCode: {
-        type: String,
+        require: true
     },
     etabOrigin: {
         type: String,
@@ -37,15 +29,17 @@ const userSchema = new Schema({
         type: String,
         required: true,
     },
-    password: {
+    futurEtabOrigin: {
         type: String,
-        required: true,
     },
-    role: {
+    futurGouvernerat: {
         type: String,
-        roles: ["user", "admin"],
-        default: "user"
-    }
+    },
+    futurPoste: {
+        type: String,
+    },
+    description: {
+        type: String,
+    },
 });
-
-module.exports = mongoose.model("user", userSchema)
+module.exports = mongoose.model("job", jobSchema)

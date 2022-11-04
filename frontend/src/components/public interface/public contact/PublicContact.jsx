@@ -19,7 +19,7 @@ const PublicContact = () => {
         setTimeout(() => {
           FullName.value = '';
           Email.value = '';
-          CompanyName.value = '';
+          CompanyName.value = ''; 
           Msg.value = '';
           checkbox.checked=false;
         }, 2000);
